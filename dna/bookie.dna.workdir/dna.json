@@ -1,0 +1,13 @@
+{
+  "name": "bookie-dna",
+  "uuid": "",
+  "properties": null,
+  "zomes": {
+    "calendar_events": {
+      "wasm_path": "../target/wasm32-unknown-unknown/release/calendar_events.wasm"
+    },
+    "resource_bookings": {
+      "wasm_path": "../target/wasm32-unknown-unknown/release/resource_bookings.wasm"
+    }
+  }
+}
