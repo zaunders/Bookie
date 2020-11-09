@@ -3,13 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "concurrently \"npm:start-holochain\" \"npm:serve\"",
     "serve": "vue-cli-service serve",
+    "start-holochain": "RUST_LOG=warn holochain-run-dna ../dna/bookie.dna.gz",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.2.5",
+    "@graphql-tools/schema": "^7.0.0",
+    "@holochain-open-dev/profiles": "git://github.com/holochain-open-dev/profiles-module.git#ui-build",
+    "@holochain/conductor-api": "0.0.1-dev.10",
+    "@vue/apollo-option": "^4.0.0-alpha.11",
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
     "vue": "^3.0.0",
@@ -33,6 +40,7 @@
     "@vue/eslint-config-typescript": "^5.0.2",
     "@vue/test-utils": "^2.0.0-0",
     "chai": "^4.1.2",
+    "concurrently": "^5.3.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
     "typescript": "~3.9.3"

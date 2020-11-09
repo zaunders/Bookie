@@ -1,16 +1,16 @@
 [package]
 authors = ["guillem.cordoba@gmail.com"]
 edition = "2018"
-name = "resource_bookings"
+name = "profiles"
 version = "0.0.1"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
-name = "resource_bookings"
+name = "profiles"
 
 [dependencies]
 derive_more = "0"
 serde = "1"
 
+profiles = {git = "https://github.com/holochain-open-dev/profiles-module", package = "profiles"}
 hdk3 = "0"
-resource_bookings = {git = "https://github.com/holochain-open-dev/resource-bookings-module", package = "resource_bookings"}
