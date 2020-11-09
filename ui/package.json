@@ -16,6 +16,7 @@
     "@graphql-tools/schema": "^7.0.0",
     "@holochain-open-dev/profiles": "git://github.com/holochain-open-dev/profiles-module.git#ui-build",
     "@holochain/conductor-api": "0.0.1-dev.10",
+    "@vue/apollo-option": "^4.0.0-alpha.11",
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
     "vue": "^3.0.0",
