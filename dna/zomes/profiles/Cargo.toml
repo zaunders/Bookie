@@ -12,5 +12,5 @@ name = "profiles"
 derive_more = "0"
 serde = "1"
 
-profiles = {git = "https://github.com/holochain-open-dev/profiles-module", package = "profiles"}
+profiles = {git = "https://github.com/holochain-open-dev/profiles-module", branch = "main", package = "profiles"}
 hdk3 = "0"

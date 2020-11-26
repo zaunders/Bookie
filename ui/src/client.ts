@@ -22,7 +22,7 @@ const allTypeDefs = [rootTypeDef, profilesTypeDefs];
 export async function setupClient(url: string): Promise<ApolloClient<any>> {
   const appWebsocket = await AppWebsocket.connect(url);
 
-  const appInfo = await appWebsocket.appInfo({ app_id: "test-app" });
+  const appInfo = await appWebsocket.appInfo({ installed_app_id: "test-app" });
 
   const cellId = appInfo.cell_data[0][0];
 
